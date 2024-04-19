@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <section id="printing-options">
+             <button onclick="window.print()">Print Page</button>
+                <!-- Additional printing options can be added here -->
+             <h1>Checkout</h1>
+       </section>
+    </header>
+    <main>
+        <section id="items">
+            <!-- Dynamically generated list of items from the basket -->
+            <ul id="basket-items">
+                <!-- Basket items will be dynamically added here -->
+            </ul>
+        </section>
+        <section id="total">
+            <h2>Total:</h2>
+            <p id="total-amount">£0.00</p>
+        </section>
+        <section id="payment-method">
+            <h2>Payment Method:</h2>
+            <!-- Payment method options go here -->
+            <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+            <label for="credit-card">Credit Card</label>
+            <br>
+            <input type="radio" id="paypal" name="payment-method" value="paypal">
+            <label for="paypal">PayPal</label>
+            <br>
+            <!-- Add more payment methods as needed -->
+        </section>
+        <button id="pay-button">Proceed to Payment</button>
+        <section id="currency-conversion">
+            <h2>Currency Conversion</h2>
+            <div>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount">
+            </div>
+            <div>
+                <label for="from-currency">From Currency:</label>
+                <select id="from-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="GBP">GBP</option>
+                    <!-- Add more currency options as needed -->
+                </select>
+            </div>
+            <div>
+                <label for="to-currency">To Currency:</label>
+                <select id="to-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="GBP">GBP</option>
+                    <!-- Add more currency options as needed -->
+                </select>
+            </div>
+            <button id="convert">Convert</button>
+            <div id="converted-amount">
+                <!-- Converted amount will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

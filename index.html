@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="../images/logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilli Restaurant | Home</title>
+</head>
+
+<body>
+
+    <!--Header for laptop (start)-->
+    <header>
+        <div class="header">
+
+            <!--Sign up/Sign in Form-->
+            <div class="sign">
+                <div class="sign-box">
+                    <div class="bar">
+                        <i class="fa-solid fa-xmark" id="x-sign-mb"></i>
+                    </div>
+                    <!-- sign up form -->
+                    <div class="signup">
+                        <h3>Sign Up</h3>
+                        <form action="#">
+                            <label form="fullname">Enter Full Name</label><br>
+                            <input type="text" placeholder="Full Name" name="fullname" id=""><br>
+                            <label form="email">Enter E-mail</label><br>
+                            <input type="email" placeholder="E-mail" name="email" id=""><br>
+                            <label form="password">Create Password</label><br>
+                            <input type="password" placeholder="Password" name="password" id=""><br>
+                            <label form="copassword">Confirm Password</label><br>
+                            <input type="password" placeholder="Confirm Password" name="copassword" id=""><br>
+                            <input type="submit" value="Sign Up">
+                            <p id="to-signin">Already have an account? Sign In</p>
+                        </form>
+                    </div>
+                    <!-- sign in form -->
+                    <div class="signin">
+                        <h3>Sign In</h3>
+                        <form action="#">
+                            <label form="email2">Enter Your E-mail:</label>
+                            <input type="email" placeholder="E-mail" name="email2" id="">
+                            <label form="password2">Enter Password: </label>
+                            <input type="password2" placeholder="Password" name="password2" id="">
+                            <input type="submit" value="Sign In">
+                        </form>
+                        <p>Forgot Password?</p>
+                        <p id="to-signup">Don't have an account? Sign Up</p>
+                    </div>
+                </div>
+            </div>
+            <!--basket-->
+            <div id="basket">
+                <h2><i class="fas fa-shopping-basket"></i> Basket</h2>
+                <ul id="basket-items">
+                    <!-- Basket items will be dynamically added here -->
+                </ul>     
+                <a href="Checkout.html" class="checkout-button">Checkout</a>
+
+            </div>
+            
+            <!--Hidden Header for Mobile/Tablet (start)-->
+            <div class="headerbar">
+                <div class="account">
+                    <ul>
+                        <a href="./index.html">
+                            <li><i class="fa-solid fa-house-chimney"></i></li>
+                        </a>
+                        <a href="#" id="search-link">
+                            <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i></li>
+                          </a>
+                          <div class="search" id="searchinput1">
+                            <input type="search" id="search-input">
+                            <i class="fa-solid fa-magnifying-glass srchicon" id="search-button"></i>
+                          </div>
+                        <a href="#">
+                            <li><i class="fa-solid fa-user" id="user-mb"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <a href="./index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="./About.html">
+                            <li>About</li>
+                        </a>
+                        <a href="./menu.html">
+                            <li>Food Menu</li>
+                        </a>
+                        <a href="./book.html">
+                            <li>Book table</li>
+                        </a>
+                        <a href="./order.html">
+                            <li>Order</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!--Hidden Header for Mobile/Tablet (end)-->
+            <div class="logo">
+                <img src="../images/gallery/logo.svg" alt="logo">
+            </div>
+            <!--Bar/cross in header for mobile/tablet (start)-->
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="hdcross"></i>
+            </div>
+            <!--Bar/cross in header for mobile/tablet (end)-->
+            <div class="nav">
+                <ul>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./About.html">
+                        <li>About</li>
+                    </a>
+                    <a href="./menu.html">
+                        <li>Food Menu</li>
+                    </a>
+                    <a href="./book.html">
+                        <li>Book table</li>
+                    </a>
+                    <a href="./order.html">
+                        <li>Order</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="account">
+                <ul>
+                    <a href="./index.html">
+                        <li><i class="fa-solid fa-house-chimney"></i></li>
+                    </a>
+                    <a href="#" id="search-link">
+                        <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i></li>
+                      </a>
+                      <div class="search" id="searchinput2">
+                        <input type="search" id="search-input">
+                        <i class="fa-solid fa-magnifying-glass srchicon" id="search-button"></i>
+                      </div>
+                    <a href="#">
+                        <li><i class="fa-solid fa-user" id="user-lap"></i></li>
+                    </a>
+                    
+                </ul>
+            </div>
+            <div>
+                <div class="dark-mode-toggle">
+                    <button id="dark-mode-button">Toggle Dark Mode</button>
+                </div>
+            </div>
+            <div id="printing-options">
+                <button onclick="window.print()">Print Page</button>
+                <!-- Additional printing options can be added here -->
+            </div>
+        </div>
+        
+
+    </header>
+    <!--Header for laptop (end)-->
+
+    <!--Home Page-->
+    <div class="home">
+        <!--Section 1 (start)-->
+        <div class="main_slide">
+            <div>
+                <h1>Indulge <span> in the best </span> Japanese Cuisine </h1>
+                <p>At our restaurant, we pride ourselves on offering an authentic Japanese culinary experience like no other. Step into our kitchen, where the art of Japanese cuisine comes to life, combining tradition with innovation to create dishes that tantalize the taste buds and transport you to the vibrant streets of Japan. From expertly crafted sushi rolls to sizzling teppanyaki plates, each dish is prepared with precision and care, using only the freshest ingredients sourced locally and from Japan. </p>
+                <button class="red_btn">Visit Now <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <div>
+                <img src="../images/gallery/mains/Ramen - main course.png" alt="">
+            </div>
+        </div>
+        <div>
+            <audio id="description" controls preload="none">
+                <source src="../images/roa-music-summer-madness(chosic.com).mp3" type="audio/mpeg">
+            </audio>  
+         <!-- Button to toggle audio description -->
+            <button id="toggle-description">Toggle Audio</button>
+           <!-- Opening Hours section -->
+        </div>
+        <div id="opening-hours">
+            <h2>Opening Hours</h2>
+            <ul>
+                <li><strong>Monday:</strong> 10:00 AM - 11:00 PM</li>
+                <li><strong>Tuesday:</strong> 10:00 AM - 11:00 PM</li>
+                <li><strong>Wednesday:</strong> 10:00 AM - 11:00 PM</li>
+                <li><strong>Thursday:</strong> 10:00 AM - 11:00 PM</li>
+                <li><strong>Friday:</strong> 10:00 AM - 11:00 PM</li>
+                <li><strong>Saturday:</strong> 10:00 AM - 11:00 PM</li>
+                <li><strong>Sunday:</strong> Closed</li>
+            </ul>   
+        </div>
+    
+        <!--Section 1 (end)-->
+
+        <!--Section 2 (start)-->
+        <!-- Keep only 3 items -->
+        <div class="food-items">
+            <div class="item">
+                <div>
+                    <img src="../images/gallery/desert/anmitsu.png" alt="Food item">
+                </div>
+                <h3>Anmitsu</h3>
+                <p>Refreshing Japanese dessert with agar jelly, fruits, and sweet syrup.</p>
+                <button class="white_btn">See Menu</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="../images/gallery/mains/katsu curry.png" alt="Food item">
+                </div>
+                <h3>katsu curry</h3>
+                <p>Japanese comfort food: crispy breaded cutlet with rich, fragrant curry.</p>
+                <button class="red_btn">See Menu</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="../images/gallery/starters/Ebi chili-starter.png" alt="Food item">
+                </div>
+                <h3>Ebi chili</h3>
+                <p>Succulent shrimp coated in spicy-sweet chili sauce, bursting with flavor.</p>
+                <button class="white_btn">See Menu</button>
+            </div>
+        </div>
+        <!--Section 2 (end)-->
+
+        <!--Section 3 (start)-->
+        <div class="main_slide2">
+            <div class="foodimg">
+                <img src="../images/gallery/mains/okonomiyaki.png" alt="">
+            </div>
+            <div class="question">
+                <div>
+                    <h2>Why People Choose Us?</h2>
+                </div>
+                <div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="../images/gallery/desert/kakigori-dessert.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Choose your favorite</h4>
+                            <p>Choose us for hygienic food, fresh environment, skilled chefs, and unforgettable events. We offer a dining experience that surpasses expectations, creating memorable moments with every visit.</p>
+                        </div>
+                    </div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="../images/gallery/mains/okonomiyaki.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Choose your favorite</h4>
+                            <p>Experience our commitment to quality, excellence, and customer satisfaction.</p>
+                        </div>
+                    </div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="../images/gallery/starters/Miso soup.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Choose your favorite</h4>
+                            <p>Indulge in our diverse menu offerings crafted with culinary expertise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Section 3 (end)-->
+
+        <!--Section 4 (start)-->
+
+        <div class="main_slide3">
+            <div class="fav-head">
+                <h3>Explore our signature dishes cherished by our valued patrons.</h3>
+                <p>Discover our renowned culinary creations, beloved by our loyal customers for their exceptional taste and quality, making us a favorite dining destination for all.</p>
+            </div>
+            <!-- Keep only 4 items -->
+            <div class="fav-food">
+                <div class="item">
+                    <div>
+                        <img src="../images/gallery/desert/matcha.png" alt="Food item">
+                    </div>
+                    <h3>Matcha</h3>
+                    <p>Matcha, a powdered green tea, offers a unique taste and abundant antioxidants, perfect for various culinary creations.</p>
+                    <p class="fav-price">£2.90</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../images/gallery/mains/soba noddles.png" alt="Food item">
+                    </div>
+                    <h3>Soba noddles</h3>
+                    <p>Soba noodles, made from buckwheat flour, are a Japanese staple known for their nutty flavor and firm texture.</p>
+                    <p class="fav-price">£2.90</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../images/gallery/starters/shahimi-footer-bg.png" alt="Food item">
+                    </div>
+                    <h3>Shahimi</h3>
+                    <p>Sashimi is a Japanese delicacy consisting of thinly sliced raw fish or seafood, often served with soy sauce and wasabi.</p>
+                    <p class="fav-price">£2.90</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../images/gallery/starters/sunomono.png" alt="Food item">
+                    </div>
+                    <h3>Sunomono</h3>
+                    <p>Sunomono is a Japanese dish consisting of thinly sliced vegetables or seafood marinated in vinegar, often served as a refreshing appetizer or side dish.</p>
+                    <p class="fav-price">£2.90</p>
+                </div>
+            </div>
+            <!-- design div  -->
+            <div class="dsgn"></div>
+        </div>
+        <!--Section 4 (end)-->
+
+        <!--Section 5 (start)-->
+        <div class="main_slide4">
+
+            <div class="chef-feed">
+                <h2>Customer <span style="color: red;">Feedback</span></h2>
+                <p>Our customers' feedback speaks volumes about their experience with us. From the first bite to the last, they're enchanted by our delectable dishes, impeccable service, and cozy atmosphere. We're deeply grateful for their trust and loyalty, inspiring us to deliver excellence with every visit.</p>
+                <div class="chef-detail">
+                    <div>
+                        <img src="../images/gallery/chef1.png" alt="">
+                    </div>
+                    <div>
+                        <h6>Don Pablo</h6>
+                        <p>We make the magic happen.</p>
+                    </div>
+                </div>
+                <div class="chef-vic">
+                    <div>
+                        <i class="fa-solid fa-hand-peace"></i>
+                        <h4>68</h4>
+                        <p>More thumbs up from our customers </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-trophy"></i>
+                        <h4>956</h4>
+                        <p>Uncountable achievements </p>
+                    </div>
+                </div>
+            </div>
+            <div class="chef">
+                <img src="../images/gallery/chef1.png" alt="">
+            </div>
+        </div>
+        <!--Section 5 (end)-->
+
+        <!--Section 6 (start)-->
+        <div class="letter">
+            <div class="letter-head">
+                <h2>Subscribe <span>Newsletter</span></h2>
+            </div>
+            <div class="letter-input">
+                <div>
+                    <input type="email" placeholder="Example@email.com">
+                </div>
+                <button class="red_btn">Subscribe</button>
+            </div>
+        </div>
+        <!--Section 6 (end)-->
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-1">
+            <div class="logo">
+                <img src="../images/map.png" alt="">
+            </div>
+            <div>
+                <address>
+                    <p>Email: grillrestaurant@gmail.com</p>
+                    <p>YouTube: grill restaurant</p>
+                    <p>University House,<br> Bishop's Road,<br> Peterborough PE1 5BW.</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-2">
+            <img src="../images/gallery/shape-3.png" alt="">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

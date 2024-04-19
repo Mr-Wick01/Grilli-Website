@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="../images/logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="About.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilli Restaurant | About</title>
+</head>
+
+<body>
+    <!--Header for laptop (start)-->
+    <header>
+        <div class="header">
+
+            <!--Sign up/Sign in Form-->
+            <div class="sign">
+                <div class="sign-box">
+                    <div class="bar">
+                        <i class="fa-solid fa-xmark" id="x-sign-mb"></i>
+                    </div>
+                    <!-- sign up form  -->
+                    <div class="signup">
+                        <h3>Sign Up</h3>
+                        <form action="#">
+                            <label for="fullname">Enter Full Name</label><br>
+                            <input type="text" placeholder="Full Name" name="fullname" id=""><br>
+                            <label for="email">Enter E-mail</label><br>
+                            <input type="email" placeholder="E-mail" name="email" id=""><br>
+                            <label for="password">Create Password</label><br>
+                            <input type="password" placeholder="Password" name="password" id=""><br>
+                            <label for="copassword">Confirm Password</label><br>
+                            <input type="password" placeholder="Confirm Password" name="copassword" id=""><br>
+                            <input type="submit" value="Sign Up">
+                            <p id="to-signin">Already have an account? Sign In</p>
+                        </form>
+                    </div>
+                    <!-- sign in form  -->
+                    <div class="signin">
+                        <h3>Sign In</h3>
+                        <form action="#">
+                            <label for="email2">Enter Your E-mail:</label>
+                            <input type="email" placeholder="E-mail" name="email2" id="">
+                            <label for="password2">Enter Password: </label>
+                            <input type="password2" placeholder="Password" name="password2" id="">
+                            <input type="submit" value="Sign In">
+                        </form>
+                        <p>Forgot Password?</p>
+                        <p id="to-signup">Don't have an account? Sign Up</p>
+                    </div>
+                </div>
+            </div>
+            <!--basket-->
+            <div id="basket">
+                <h2><i class="fas fa-shopping-basket"></i> Basket</h2>
+                <ul id="basket-items">
+                    <!-- Basket items will be dynamically added here -->
+                </ul>     
+                <a href="Checkout.html" class="checkout-button">Checkout</a>
+            </div>
+           
+            
+            <!--Hidden Header for Mobile/Tablet (start)-->
+            <div class="headerbar">
+                <div class="account">
+                    <ul>
+                        <a href="./index.html">
+                            <li><i class="fa-solid fa-house-chimney"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i></li>
+                        </a>
+                        <div class="search" id="searchinput1">
+                            <input type="search" name="" id="">
+                            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                        </div>
+                        <a href="#">
+                            <li><i class="fa-solid fa-user" id="user-mb"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <a href="./index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="./About.html">
+                            <li>About</li>
+                        </a>
+                        <a href="./menu.html">
+                            <li>Food Menu</li>
+                        </a>
+                        <a href="./book.html">
+                            <li>Book table</li>
+                        </a>
+                        <a href="./order.html">
+                            <li>Order</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!--Hidden Header for Mobile/Tablet (end)-->
+            <div class="logo">
+                <img src="../images/gallery/logo.svg" alt="logo">
+            </div>
+            <!--Bar/cross in header for mobile/tablet (start)-->
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="hdcross"></i>
+            </div>
+            <!--Bar/cross in header for mobile/tablet (end)-->
+            <div class="nav">
+                <ul>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./About.html">
+                        <li>About</li>
+                    </a>
+                    <a href="./menu.html">
+                        <li>Food Menu</li>
+                    </a>
+                    <a href="./book.html">
+                        <li>Book table</li>
+                    </a>
+                    <a href="./order.html">
+                        <li>Order</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="account">
+                <ul>
+                    <a href="./index.html">
+                        <li><i class="fa-solid fa-house-chimney"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i></li>
+                    </a>
+                    <div class="search" id="searchinput2">
+                        <input type="search" name="" id="">
+                        <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                    </div>
+                    <a href="#">
+                        <li><i class="fa-solid fa-user" id="user-lap"></i></li>
+                    </a>
+                    
+                </ul>
+            </div>
+        
+            <div>
+                <div class="dark-mode-toggle">
+                    <button id="dark-mode-button">Toggle Dark Mode</button>
+                </div>
+            </div>
+            <div id="printing-options">
+                <button onclick="window.print()">Print Page</button>
+                <!-- Additional printing options can be added here -->
+            </div>
+        </div>
+    </header>
+    <!--Header for laptop (end)-->
+
+    <!--About-->
+    <div class="about">
+        <div class="about1">
+            <div class="aboutpara">
+                <h1>About Us</h1>
+                <p>At our core, we are more than just a restaurant; we are a story of passion, dedication, and cultural appreciation. Our journey began with a simple desire to share the authentic flavors of Japan with the world. Through meticulous attention to detail, innovative recipes, and warm hospitality, we have cultivated a culinary haven where tradition meets modernity. With each dish, we aim to transport our guests to the bustling streets of Peterborough or the serene countryside of Cambridgeshire, offering a glimpse into the soul of Japan. Join us on this gastronomic adventure and experience the essence of Japanese cuisine like never before.</p>
+            </div>
+            <div class="aboutimg">
+                <img src="../images/gallery/shape-9.png" alt="">
+            </div>
+        </div>
+
+        <!-- chef's profiles -->
+        <div class="about2">
+            <h1>Our Golden Chefs</h1>
+            <div class="food-items">
+                <div class="item">
+                    <div>
+                        <img src="../images/gallery/chef2.png" alt="chef">
+                    </div>
+                    <h3>Toranaga Tanaka</h3>
+                    <p>Toranaga is a master of Japanese cuisine, blending tradition with innovation to create unforgettable dishes that delight the senses.</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../images/gallery/chef1.png" alt="chef">
+                    </div>
+                    <h3>Hitomashi</h3>
+                    <p>Hitomashi brings creativity and passion to every dish, crafting Japanese cuisine with precision and flair, ensuring an exceptional dining experience</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../images/gallery/chef2.png" alt="chef">
+                    </div>
+                    <h3>Nabasaki</h3>
+                    <p>Nabasaki is a master of traditional Japanese culinary techniques, infuses innovation and expertise into each creation, delivering a harmonious blend of flavors and textures that delight the senses.</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../images/gallery/chef1.png" alt="chef">
+                    </div>
+                    <h3>Tokiyo</h3>
+                    <p>Tokiyo brings creativity and passion to crafting flavorful and visually stunning Japanese culinary masterpieces.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Companies stories -->
+        <div class="about3">
+            <h1>Our Story</h1>
+            <p>Our story is one of culinary passion ignited by a love for Japanese cuisine. From humble beginnings, we embarked on a journey to create a haven where tradition and innovation harmonize. Inspired by the vibrant flavors and rich heritage of Japan, we set out to craft an immersive dining experience that transports our guests to the heart of Peterborough. With each dish, we weave a tale of authenticity and creativity, inviting you to embark on a gastronomic adventure like no other. Join us as we continue to celebrate the artistry of Japanese cooking and share our love for food with the world.</p>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-1">
+            <div class="logo">
+                <img src="../images/map.png" alt="">
+            </div>
+            <div>
+                <address>
+                    <p>Email: grillrestaurant@gmail.com</p>
+                    <p>YouTube: grill restaurant</p>
+                    <p>University House,<br> Bishop's Road,</br> Peterborough PE1 5BW.</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-2">
+            <img src="../images/gallery/shape-3.png" alt="">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
